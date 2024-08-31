@@ -1,0 +1,89 @@
+# Xcode
+.DS_Store
+*.swp
+*~.nib
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+.idea/
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcscmblueprint
+
+# CocoaPods
+Pods/
+Podfile.local.yaml
+!.envrc
+!.env
+
+# Xcode specific files
+xcuserdata/
+*.xcworkspace
+xcshareddata/
+*.xcconfig
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/*.png
+fastlane/test_output
+
+# Temporary files
+*.tmp
+*.swp
+*~.nib
+
+# Build
+build/
+DerivedData/
+*.log
+
+# macOS
+*.DS_Store
+
+# Swift Package Manager
+Packages
+/.build/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# SwiftPM
+.swiftpm/
+Package.resolved
+
+# Archives
+*.xcarchive
+
+# Bundler
+/.bundle/
+
+# SPM Dependencies
+/.build/
+
+# CocoaPods Keys
+*.keys
+
+# Various Settings
+.idea/
+*.xcuserdatad
+
+# xcresults
+*.xcresult
+
+# Simulator logs
+system_logs.log
+
+# Scheme and workspace files
+xcuserdata/
