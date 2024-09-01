@@ -25,6 +25,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     
     // Start the VPN tunnel
     override func startTunnel(options: [String: NSObject]?, completionHandler: @escaping (Error?) -> Void) {
+        print("VPN startTunnel")
         guard
             let protocolConfig = protocolConfiguration as? NETunnelProviderProtocol,
             let providerConfig = protocolConfig.providerConfiguration,
@@ -107,7 +108,7 @@ extension PacketTunnelProvider: OpenVPNAdapterDelegate {
             completionHandler(error == nil ? self.packetFlow : nil)
         }
     }
-    
+
     // Handle VPN events
     func openVPNAdapter(_ openVPNAdapter: OpenVPNAdapter, handleEvent event: OpenVPNAdapterEvent, message: String?) {
         switch event {
@@ -117,12 +118,15 @@ extension PacketTunnelProvider: OpenVPNAdapterDelegate {
             }
             startHandler?(nil)
             startHandler = nil
+            NSLog("VPN Connected")
             
         case .disconnected:
             stopVPNTrackingAndHandleDisconnection()
+            NSLog("VPN Disconnected")
             
         case .reconnecting:
             reasserting = true
+            NSLog("VPN Reconnecting")
             
         default:
             break
