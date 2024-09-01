@@ -3,11 +3,11 @@ import UIKit
 
 class ViewController: UIViewController {
     private var providerManager: NETunnelProviderManager!
-    private let vpnUsername = "rex"
-    private let vpnConfigFileName = "rexopvn.ovpn"
+    private let vpnUsername = "openvpn"
+    private let vpnConfigFileName = "profile.ovpn"
     private let vpnProviderBundleIdentifier = "com.mildgrind.icefuse.dev.vpnclientnetwork"
     private let vpnProfileDescription = "xxxovpn"
-    
+    private let vpnPassword = "YVQRypJEdtRo"
     override func viewDidLoad() {
         super.viewDidLoad()
         loadProviderManager { [weak self] in
@@ -46,7 +46,9 @@ class ViewController: UIViewController {
         let tunnelProtocol = NETunnelProviderProtocol()
         tunnelProtocol.serverAddress = ""
         tunnelProtocol.providerBundleIdentifier = vpnProviderBundleIdentifier
-        tunnelProtocol.providerConfiguration = ["ovpn": configData]
+        tunnelProtocol.providerConfiguration = ["ovpn": configData,
+                                                "username": vpnUsername,
+                                                "password": vpnPassword]
         tunnelProtocol.disconnectOnSleep = false
         return tunnelProtocol
     }

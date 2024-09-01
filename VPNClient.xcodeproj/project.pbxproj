@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		49CE437FCE02179E6147EAD1 /* Pods_VPNClientNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0D0A34CFF3C024A1502130 /* Pods_VPNClientNetwork.framework */; };
 		D1814C61B4774A70F1E7649B /* Pods_VPNClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFCAC12D0B93393887BA966 /* Pods_VPNClient.framework */; };
-		F754410E2C83880A00096ABF /* profile.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = F754410D2C83880A00096ABF /* profile.ovpn */; };
-		F75441102C838A6100096ABF /* profile-4.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = F754410F2C838A6100096ABF /* profile-4.ovpn */; };
 		F777E2782C8468440082AEC7 /* rexopvn.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = F777E2772C8468440082AEC7 /* rexopvn.ovpn */; };
+		F777E27C2C846F1B0082AEC7 /* profile.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = F777E27B2C846F1B0082AEC7 /* profile.ovpn */; };
 		F78A37D92C82E30000CEB691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A37D82C82E30000CEB691 /* AppDelegate.swift */; };
 		F78A37DB2C82E30000CEB691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A37DA2C82E30000CEB691 /* SceneDelegate.swift */; };
 		F78A37DD2C82E30000CEB691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A37DC2C82E30000CEB691 /* ViewController.swift */; };
@@ -54,9 +53,8 @@
 		C099E0C1311D106605C3E635 /* Pods-VPNClientNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPNClientNetwork.release.xcconfig"; path = "Target Support Files/Pods-VPNClientNetwork/Pods-VPNClientNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		D8884686B981756586110B0E /* Pods-VPNClientNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPNClientNetwork.debug.xcconfig"; path = "Target Support Files/Pods-VPNClientNetwork/Pods-VPNClientNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		DD0D0A34CFF3C024A1502130 /* Pods_VPNClientNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPNClientNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F754410D2C83880A00096ABF /* profile.ovpn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = profile.ovpn; sourceTree = "<group>"; };
-		F754410F2C838A6100096ABF /* profile-4.ovpn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "profile-4.ovpn"; sourceTree = "<group>"; };
 		F777E2772C8468440082AEC7 /* rexopvn.ovpn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rexopvn.ovpn; sourceTree = SOURCE_ROOT; };
+		F777E27B2C846F1B0082AEC7 /* profile.ovpn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = profile.ovpn; sourceTree = SOURCE_ROOT; };
 		F78A37D52C82E30000CEB691 /* VPNClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPNClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78A37D82C82E30000CEB691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78A37DA2C82E30000CEB691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,9 +136,8 @@
 		F78A37D72C82E30000CEB691 /* VPNClient */ = {
 			isa = PBXGroup;
 			children = (
+				F777E27B2C846F1B0082AEC7 /* profile.ovpn */,
 				F777E2772C8468440082AEC7 /* rexopvn.ovpn */,
-				F754410F2C838A6100096ABF /* profile-4.ovpn */,
-				F754410D2C83880A00096ABF /* profile.ovpn */,
 				F78A37EC2C82E64000CEB691 /* VPNClient.entitlements */,
 				F78A37D82C82E30000CEB691 /* AppDelegate.swift */,
 				F78A37DA2C82E30000CEB691 /* SceneDelegate.swift */,
@@ -249,9 +246,8 @@
 			files = (
 				F78A37E22C82E30200CEB691 /* Assets.xcassets in Resources */,
 				F78A37E52C82E30200CEB691 /* Base in Resources */,
-				F754410E2C83880A00096ABF /* profile.ovpn in Resources */,
 				F78A37E02C82E30000CEB691 /* Base in Resources */,
-				F75441102C838A6100096ABF /* profile-4.ovpn in Resources */,
+				F777E27C2C846F1B0082AEC7 /* profile.ovpn in Resources */,
 				F777E2782C8468440082AEC7 /* rexopvn.ovpn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
