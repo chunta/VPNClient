@@ -23,6 +23,13 @@
 		F7DD0D312C883CAA002AA04E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7DD0D302C883CAA002AA04E /* GoogleService-Info.plist */; };
 		F7DD0D342C883E8E002AA04E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F7DD0D332C883E8E002AA04E /* FirebaseAnalytics */; };
 		F7DD0D362C883E8E002AA04E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F7DD0D352C883E8E002AA04E /* FirebaseMessaging */; };
+		F7DD0D632C88517D002AA04E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD0D622C88517D002AA04E /* NotificationService.swift */; };
+		F7DD0D672C88517D002AA04E /* ServiceExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F7DD0D602C88517D002AA04E /* ServiceExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7DD0D702C886671002AA04E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DD0D4B2C8846EF002AA04E /* UserNotifications.framework */; };
+		F7DD0D712C886671002AA04E /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DD0D4D2C8846EF002AA04E /* UserNotificationsUI.framework */; };
+		F7DD0D742C886671002AA04E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD0D732C886671002AA04E /* NotificationViewController.swift */; };
+		F7DD0D772C886671002AA04E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7DD0D762C886671002AA04E /* Base */; };
+		F7DD0D7B2C886671002AA04E /* ContentExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F7DD0D6F2C886671002AA04E /* ContentExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,20 @@
 			remoteGlobalIDString = F78A38032C82E93200CEB691;
 			remoteInfo = VPNClientNetwork;
 		};
+		F7DD0D652C88517D002AA04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F78A37CD2C82E30000CEB691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DD0D5F2C88517D002AA04E;
+			remoteInfo = ServiceExt;
+		};
+		F7DD0D792C886671002AA04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F78A37CD2C82E30000CEB691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DD0D6E2C886671002AA04E;
+			remoteInfo = ContentExt;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +63,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				F7DD0D7B2C886671002AA04E /* ContentExt.appex in Embed Foundation Extensions */,
+				F7DD0D672C88517D002AA04E /* ServiceExt.appex in Embed Foundation Extensions */,
 				F78A380D2C82E93200CEB691 /* VPNClientNetwork.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -80,6 +103,13 @@
 		F7DD0D502C8846EF002AA04E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		F7DD0D532C8846EF002AA04E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F7DD0D552C8846EF002AA04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DD0D602C88517D002AA04E /* ServiceExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ServiceExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DD0D622C88517D002AA04E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F7DD0D642C88517D002AA04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DD0D6F2C886671002AA04E /* ContentExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DD0D732C886671002AA04E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		F7DD0D762C886671002AA04E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F7DD0D782C886671002AA04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +129,22 @@
 			files = (
 				F78A38052C82E93200CEB691 /* NetworkExtension.framework in Frameworks */,
 				49CE437FCE02179E6147EAD1 /* Pods_VPNClientNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DD0D5D2C88517D002AA04E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DD0D6C2C886671002AA04E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DD0D712C886671002AA04E /* UserNotificationsUI.framework in Frameworks */,
+				F7DD0D702C886671002AA04E /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +181,8 @@
 				F78A38062C82E93200CEB691 /* VPNClientNetwork */,
 				F7DD0D3C2C8846E1002AA04E /* ServiceExt */,
 				F7DD0D4F2C8846EF002AA04E /* ContentExt */,
+				F7DD0D612C88517D002AA04E /* ServiceExt */,
+				F7DD0D722C886671002AA04E /* ContentExt */,
 				F78A37D62C82E30000CEB691 /* Products */,
 				A7D63A2F36409A1E6BFA6787 /* Pods */,
 				52B75A7D0C6535F3D708BE0C /* Frameworks */,
@@ -146,6 +194,8 @@
 			children = (
 				F78A37D52C82E30000CEB691 /* VPNClient.app */,
 				F78A38042C82E93200CEB691 /* VPNClientNetwork.appex */,
+				F7DD0D602C88517D002AA04E /* ServiceExt.appex */,
+				F7DD0D6F2C886671002AA04E /* ContentExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +247,25 @@
 			path = ContentExt;
 			sourceTree = "<group>";
 		};
+		F7DD0D612C88517D002AA04E /* ServiceExt */ = {
+			isa = PBXGroup;
+			children = (
+				F7DD0D622C88517D002AA04E /* NotificationService.swift */,
+				F7DD0D642C88517D002AA04E /* Info.plist */,
+			);
+			path = ServiceExt;
+			sourceTree = "<group>";
+		};
+		F7DD0D722C886671002AA04E /* ContentExt */ = {
+			isa = PBXGroup;
+			children = (
+				F7DD0D732C886671002AA04E /* NotificationViewController.swift */,
+				F7DD0D752C886671002AA04E /* MainInterface.storyboard */,
+				F7DD0D782C886671002AA04E /* Info.plist */,
+			);
+			path = ContentExt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +284,8 @@
 			);
 			dependencies = (
 				F78A380C2C82E93200CEB691 /* PBXTargetDependency */,
+				F7DD0D662C88517D002AA04E /* PBXTargetDependency */,
+				F7DD0D7A2C886671002AA04E /* PBXTargetDependency */,
 			);
 			name = VPNClient;
 			packageProductDependencies = (
@@ -243,6 +314,40 @@
 			productReference = F78A38042C82E93200CEB691 /* VPNClientNetwork.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		F7DD0D5F2C88517D002AA04E /* ServiceExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DD0D682C88517D002AA04E /* Build configuration list for PBXNativeTarget "ServiceExt" */;
+			buildPhases = (
+				F7DD0D5C2C88517D002AA04E /* Sources */,
+				F7DD0D5D2C88517D002AA04E /* Frameworks */,
+				F7DD0D5E2C88517D002AA04E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServiceExt;
+			productName = ServiceExt;
+			productReference = F7DD0D602C88517D002AA04E /* ServiceExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F7DD0D6E2C886671002AA04E /* ContentExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DD0D7C2C886671002AA04E /* Build configuration list for PBXNativeTarget "ContentExt" */;
+			buildPhases = (
+				F7DD0D6B2C886671002AA04E /* Sources */,
+				F7DD0D6C2C886671002AA04E /* Frameworks */,
+				F7DD0D6D2C886671002AA04E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentExt;
+			productName = ContentExt;
+			productReference = F7DD0D6F2C886671002AA04E /* ContentExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,6 +362,12 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					F78A38032C82E93200CEB691 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F7DD0D5F2C88517D002AA04E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F7DD0D6E2C886671002AA04E = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -279,6 +390,8 @@
 			targets = (
 				F78A37D42C82E30000CEB691 /* VPNClient */,
 				F78A38032C82E93200CEB691 /* VPNClientNetwork */,
+				F7DD0D5F2C88517D002AA04E /* ServiceExt */,
+				F7DD0D6E2C886671002AA04E /* ContentExt */,
 			);
 		};
 /* End PBXProject section */
@@ -301,6 +414,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DD0D5E2C88517D002AA04E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DD0D6D2C886671002AA04E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DD0D772C886671002AA04E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +517,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7DD0D5C2C88517D002AA04E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DD0D632C88517D002AA04E /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DD0D6B2C886671002AA04E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DD0D742C886671002AA04E /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -396,6 +540,16 @@
 			isa = PBXTargetDependency;
 			target = F78A38032C82E93200CEB691 /* VPNClientNetwork */;
 			targetProxy = F78A380B2C82E93200CEB691 /* PBXContainerItemProxy */;
+		};
+		F7DD0D662C88517D002AA04E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DD0D5F2C88517D002AA04E /* ServiceExt */;
+			targetProxy = F7DD0D652C88517D002AA04E /* PBXContainerItemProxy */;
+		};
+		F7DD0D7A2C886671002AA04E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DD0D6E2C886671002AA04E /* ContentExt */;
+			targetProxy = F7DD0D792C886671002AA04E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,6 +574,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				F7DD0D532C8846EF002AA04E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		F7DD0D752C886671002AA04E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7DD0D762C886671002AA04E /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -684,6 +846,122 @@
 			};
 			name = Release;
 		};
+		F7DD0D692C88517D002AA04E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P7LJS7G56;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ServiceExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ServiceExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.icefuse.dev.serviceext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "IceFuse Dev ServiceExtension";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7DD0D6A2C88517D002AA04E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P7LJS7G56;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ServiceExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ServiceExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.icefuse.dev.serviceext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "IceFuse Dev ServiceExtension";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7DD0D7D2C886671002AA04E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P7LJS7G56;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContentExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContentExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.icefuse.dev.contentext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "IceFuse Dev ContentExtension";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7DD0D7E2C886671002AA04E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P7LJS7G56;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContentExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContentExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.icefuse.dev.contentext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "IceFuse Dev ContentExtension";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -710,6 +988,24 @@
 			buildConfigurations = (
 				F78A380F2C82E93200CEB691 /* Debug */,
 				F78A38102C82E93200CEB691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DD0D682C88517D002AA04E /* Build configuration list for PBXNativeTarget "ServiceExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DD0D692C88517D002AA04E /* Debug */,
+				F7DD0D6A2C88517D002AA04E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DD0D7C2C886671002AA04E /* Build configuration list for PBXNativeTarget "ContentExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DD0D7D2C886671002AA04E /* Debug */,
+				F7DD0D7E2C886671002AA04E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
